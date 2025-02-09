@@ -15,8 +15,8 @@ def analyze_sales(question):
     print(sales_data)
     # 3️⃣ Extract Product & Region for Internet Search
     first_result = sales_data
-    product_name = first_result.get("product_name", "medicine")
-    region = first_result.get("region", "USA")
+    product_name = first_result[0].get("product_name", "medicine")
+    region = first_result[0].get("region", "USA")
 
     # 4️⃣ Search Internet for Reasons
     market_trends = search_sales_reasons(product_name, region)
