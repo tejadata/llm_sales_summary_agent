@@ -5,7 +5,7 @@ from prompts import prompts
 
 # 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key="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")
+    api_key="sdfdssdfsdfsdf")
 
 
 def generate_sql_query(user_question):
