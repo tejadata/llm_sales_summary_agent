@@ -6,7 +6,7 @@ client = groq.Client(
     api_key="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")
 
 
-def search_sales_reasons(product_name, region):
+def search_sales_reasons(product_name, region, loss_gain):
     """Fetches and summarizes reasons for low sales of a product in a region."""
     query = f"Why are {product_name} sales down in {region} 2025?"
     print("Search Query:", query)
@@ -24,7 +24,7 @@ def search_sales_reasons(product_name, region):
 
     # Summarize using Llama via Groq
     summary_prompt = f"""
-    Summarize the key reasons for the drop in {product_name} sales in {region} based on these sources also removde special charecters:
+    Summarize the key reasons for the {loss_gain} in {product_name} sales in {region} based on these sources also removde special charecters:
     
     {combined_text}
     

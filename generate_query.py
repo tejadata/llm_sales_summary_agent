@@ -5,7 +5,7 @@ from prompts import prompts
 
 # 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key="sdfdssdfsdfsdf")
+    api_key="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")
 
 
 def generate_sql_query(user_question):
@@ -13,6 +13,8 @@ def generate_sql_query(user_question):
 
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
+        top_p=0,
+        temperature=0,
         messages=[{"role": "user", "content": prompts(user_question)}],
     )
 
