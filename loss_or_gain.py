@@ -10,7 +10,7 @@ import groq
 
 # 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key="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"
+    api_key=""
 )
 
 
