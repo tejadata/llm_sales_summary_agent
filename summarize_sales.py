@@ -3,7 +3,7 @@ import groq
 
 # 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key="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")
+    api_key="")
 
 
 def search_sales_reasons(product_name, region, loss_gain):
