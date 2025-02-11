@@ -7,10 +7,11 @@ Created on Mon Feb 10 20:01:31 2025
 """
 
 import groq
+import streamlit as st
 
 # 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key=""
+    api_key=st.secrets["api_keys"]["api_key"]
 )
 
 

@@ -3,9 +3,12 @@ import os
 import groq
 from prompts import prompts
 
+import streamlit as st
+
 # 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key="")
+    api_key=st.secrets["api_keys"]["api_key"]
+)
 
 
 def generate_sql_query(user_question):

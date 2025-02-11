@@ -2,8 +2,12 @@ from duckduckgo_search import DDGS
 import groq
 
 # 🔹 Initialize Groq Client
+import streamlit as st
+
+# 🔹 Initialize Groq Client
 client = groq.Client(
-    api_key="")
+    api_key=st.secrets["api_keys"]["api_key"]
+)
 
 
 def search_sales_reasons(product_name, region, loss_gain):
