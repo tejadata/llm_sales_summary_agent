@@ -4,6 +4,7 @@ import time
 
 # API Endpoint (Replace with your actual API URL)
 API_URL = "https://llm-sales-summary-agent.onrender.com/summerize"
+# API_URL = "http://localhost:8000/summerize"
 
 # Set Streamlit page config
 st.set_page_config(
