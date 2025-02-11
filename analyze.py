@@ -12,7 +12,8 @@ def analyze_sales(question):
     sales_data = execute_sql_query(sql_query)
     print("out from sales dats")
     if not sales_data:
-        return "No sales data found."
+        print("No salessss daaatatatat")
+        return {"no_data": "No sales data found."}
     print(sales_data)
     # 3️⃣ Extract Product & Region for Internet Search
     first_result = sales_data
