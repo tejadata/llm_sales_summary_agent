@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # API Endpoint (Replace with your actual API URL)
-API_URL = "http://127.0.0.1:8000/summerize"
+API_URL = "https://llm-sales-summary-agent.onrender.com/summerize"
 
 # Set Streamlit page config
 st.set_page_config(page_title="💬 Sales Chatbot", layout="wide")
