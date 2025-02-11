@@ -6,7 +6,8 @@ import time
 API_URL = "https://llm-sales-summary-agent.onrender.com/summerize"
 
 # Set Streamlit page config
-st.set_page_config(page_title="💬 AI Sales Chatbot", layout="wide")
+st.set_page_config(
+    page_title="💬 AI Sales Chatbot by TejawithData", layout="wide")
 
 # Custom CSS for better UI
 st.markdown("""
