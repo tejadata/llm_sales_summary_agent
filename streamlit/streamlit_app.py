@@ -7,7 +7,7 @@ API_URL = "https://llm-sales-summary-agent.onrender.com/summerize"
 # Set Streamlit page config
 st.set_page_config(page_title="💬 Sales Chatbot", layout="wide")
 
-st.title("💬 AI Sales Chatbot")
+st.title("💬 AI Sales Chatbot by TejaWithdata")
 
 # Initialize chat history
 if "messages" not in st.session_state:
